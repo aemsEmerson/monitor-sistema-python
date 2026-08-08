@@ -6,6 +6,7 @@ Projeto desenvolvido durante meus estudos de Python com o objetivo de monitorar 
 
 Atualmente, o projeto realiza o monitoramento do uso de memória RAM, obtendo os dados diretamente do arquivo `/proc/meminfo`.
 
+
 ## Funcionalidades
 
 - Ler informações de memória do sistema
@@ -23,7 +24,7 @@ Atualmente, o projeto realiza o monitoramento do uso de memória RAM, obtendo os
 
 Clonar o repositório:
 
-git clone URL_DO_REPOSITÓRIO
+git clone git@github.com:aemsEmerson/monitor-sistema-python.git
 
 Entre na pasta:
 
@@ -46,3 +47,13 @@ python3 main.py
 - [ ] Monitoramento de CPU
 - [ ] Monitoramento de armazenamento
 - [ ] Monitoramento em tempo real
+
+## Estrutura do Projeto
+
+```text
+monitor-sistema-python/
+├── imagens/
+│   └── sistema.png
+├── main.py
+├── README.md
+└── .gitignore
