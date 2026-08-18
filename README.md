@@ -4,14 +4,21 @@ Projeto desenvolvido durante meus estudos de Python com o objetivo de monitorar 
 
 ## Sobre o projeto
 
-Atualmente, o projeto realiza o monitoramento do uso de memória RAM, obtendo os dados diretamente do arquivo `/proc/meminfo`.
+Atualmente, o projeto realiza o monitoramento de
+
+- Memória RAM
+- Informações da CPU
+- Porcentagem de uso da CPU
+- Armazenamento/Disco
 
 
 ## Funcionalidades
 
 - Ler informações de memória do sistema
-- Cálculo da memória utilizada
-- Cálculo da porcentagem de uso da memória
+- Cálculo de uso da memória
+- Leitura de informaçoes da CPU
+- Cálculo de uso da CPU
+- Leitura de informações do armazenamento
 - Exibição das informações no terminal
 
 ## Tecnologias utilizadas
@@ -19,6 +26,9 @@ Atualmente, o projeto realiza o monitoramento do uso de memória RAM, obtendo os
 - Python3
 - Linux
 - `/proc/meminfo`
+- `/proc/cpuinfo`
+- `/proc/stat`
+- `df`
 
 ## Como executar
 
@@ -40,12 +50,11 @@ python3 main.py
 
 ## Evolução do projeto
 
-- [x] Versão - 1.0 Monitoramento de memória RAM
-
+- [x] Versão - 1.0.0 Monitoramento de memória RAM
+- [x] Versão - 1.1.0 Monitoramento de CPU
+- [x] Versão - 1.2.0 Monitoramento de armazenamento e refatoração da arquitetura
 ## Próximas melhorias
 
-- [ ] Monitoramento de CPU
-- [ ] Monitoramento de armazenamento
 - [ ] Monitoramento em tempo real
 
 ## Estrutura do Projeto
@@ -53,7 +62,7 @@ python3 main.py
 ```text
 monitor-sistema-python/
 ├── imagens/
-│   └── sistema.png
+│   └── monitor-sistema.png
 ├── main.py
 ├── README.md
 └── .gitignore
